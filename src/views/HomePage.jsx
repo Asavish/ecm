@@ -2,7 +2,7 @@ import React from 'react';
 import IntroCarousel from '../sections/home/IntroCarousel';
 import Products from '../sections/home/Products';
 import WhoAreWe from '../sections/home/WhoAreWe';
-import Contact from '../sections/home/Contact';
+import Contact from '../sections/Contact';
 
 
 function HomePage() {
@@ -12,7 +12,6 @@ function HomePage() {
       <WhoAreWe />
       <Products />
       {/* <Clients /> */}
-      <Contact />
     </div>
   );
 }

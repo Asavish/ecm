@@ -8,8 +8,8 @@ import Products from './sections/home/Products';
 import AboutUs from './views/AboutUs';
 import ContactUs from './views/ContactUs';
 import { Box } from '@mui/material';
-
-
+import Solutions from './views/Solutions';
+import Contact from './sections/Contact';
 
 function App() {
   return (
@@ -29,11 +29,13 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/solutions" element={<Solutions />} />
           <Route path="/products/product-details" element={<ProductDetails />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
+        <Contact />
         <Footer />
       </Router>
     </Box>
