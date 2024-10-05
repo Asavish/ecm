@@ -17,14 +17,15 @@ function Footer() {
 				mt: "auto",
 				backgroundColor: theme.palette.accent.main,
 				color: theme.palette.text.default,
+                width: '100%',
 			}}
 		>
-			<Box>
+			<Box padding={1}>
 				<Typography variant="body2" align="center">
 					{copyright}
 				</Typography>
 			</Box>
-			<Box>
+			<Box padding={1}>
 				<Typography variant="body2" align="center">
 					<Link color="inherit" href="https://yourwebsite.com/">
 						<img

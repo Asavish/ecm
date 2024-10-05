@@ -9,7 +9,7 @@ function IntroCarousel() {
     const { items } = GlobalStaticState.introCarousel;
 
     return (
-        <Box sx={{ width: '100vw', overflow: 'hidden'}}>
+        <Box sx={{ width: '100%', overflow: 'hidden' }}>
             <Carousel
                 showArrows={true}
                 infiniteLoop={true}
@@ -18,7 +18,7 @@ function IntroCarousel() {
                 showThumbs={false}
                 showStatus={false}
                 showIndicators={false}
-                dynamicHeight={true}
+                dynamicHeight={false}
             >
                 {items.map((item, index) => (
                     <Box
@@ -26,7 +26,7 @@ function IntroCarousel() {
                         component="img"
                         src={item.image}
                         alt={item.alt}
-                        sx={{ width: '100%', height: '80vh', objectFit: 'contain' }}
+                        sx={{ width: '100%', height: '50vh', objectFit: 'contain' }}
                     />
                 ))}
             </Carousel>
