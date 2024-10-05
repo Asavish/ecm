@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './views/HomePage';
 import NavBar from './sections/NavBar';
 import Footer from './sections/Footer';
+import ProductDetails from './components/ProductDetails';
+import Products from './sections/home/Products';
+import AboutUs from './views/AboutUs';
+import ContactUs from './views/ContactUs';
 
 
 function App() {
@@ -11,9 +15,10 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/products" element={<Products />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/products/product-details" element={<ProductDetails />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>

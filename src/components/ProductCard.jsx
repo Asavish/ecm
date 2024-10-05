@@ -1,8 +1,19 @@
 import React from 'react';
 import { Card, CardContent, Typography, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 
 function ProductCard({ title, description, image }) {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        const state = {
+            imageUrl: image, // Replace with your image URL
+            description: description,
+            title : title
+          };
+        navigate("/products/product-details",{state});
+    }
+
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardContent>
@@ -13,7 +24,7 @@ function ProductCard({ title, description, image }) {
                 <Typography variant="body2" color="text.secondary">
                     {description}
                 </Typography>
-                <Button size="small" variant="contained" sx={{ mt: 2 }}>
+                <Button size="small" variant="contained" sx={{ mt: 2 }} onClick={handleClick}>
                     Read More
                 </Button>
             </CardContent>
