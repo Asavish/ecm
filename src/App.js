@@ -4,8 +4,8 @@ import HomePage from './views/HomePage';
 import NavBar from './sections/NavBar';
 import Footer from './sections/Footer';
 import { Box } from '@mui/material';
-
-
+import Solutions from './views/Solutions';
+import Contact from './sections/Contact';
 
 function App() {
   return (
@@ -25,10 +25,12 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/solutions" element={<Solutions />} />
           {/* <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
         </Routes>
+        <Contact />
         <Footer />
       </Router>
     </Box>

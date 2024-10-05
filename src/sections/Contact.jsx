@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, useMediaQuery } from '@mui/material';
-import SectionTitle from '../../components/SectionTitle'; 
+import SectionTitle from '../components/SectionTitle'; 
 
 function Contact() {
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down('sm'));
@@ -12,6 +12,7 @@ function Contact() {
             alignItems="center" 
             justifyContent="center" 
             padding={2}
+            width='100%'
         >
             <Box marginBottom={2}> 
               <SectionTitle text="Contact Us" />
