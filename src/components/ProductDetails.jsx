@@ -10,7 +10,7 @@ export default function ProductDetails() {
    
 
     return (
-        <Box sx={{ width: '100%' , mx: 'auto',maxWidth: 1200,px: 2,mb : 10}}>
+        <Box sx={{ width: '100%' , mx: 'auto',maxWidth: 1200,mb : 10}}>
         <Breadcrumbs aria-label="breadcrumb" separator=">" sx={{ padding: 2 , color: theme.palette.accent.main ,display: 'flex', justifyContent: 'flex-end'}}>
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
           Home
@@ -31,18 +31,24 @@ export default function ProductDetails() {
         alignItems="center"
         height="calc(100vh - 64px)"
         >
-            <Card sx={{ maxWidth: '80%', width: '100%' }}>
+            <Card sx={{ maxWidth: '80%', width: '100%' , boxShadow :'none'}}>
                 <CardMedia
                     component="img"
                     alt="Descriptive Alt Text"
-                    sx={{ height: '80vh', objectFit: 'cover' }}
+                    sx={{ height: '80vh', objectFit: 'contain' }}
                     image={imageUrl}
                 />
             </Card>
             
         </Box>
         <h1>Description</h1>
-            <Typography variant="body1" color={theme.palette.accent.main} >
+            <Typography variant="body1" color={theme.palette.accent.main} 
+            sx={
+                {
+                    padding:2,
+                }
+            }
+            >
                     {description}
             </Typography>
         </Box>

@@ -9,16 +9,28 @@ function Footer() {
 	return (
 		<Box
 			component="footer"
-			sx={{
-				display: "flex",
-				justifyContent: "space-between",
-				py: 3,
-				px: 2,
-				mt: "auto",
+			// sx={{
+			// 	display: "flex",
+			// 	justifyContent: "space-between",
+			// 	py: 3,
+			// 	px: 2,
+			// 	mt: "auto",
+			// 	backgroundColor: theme.palette.background.primary,
+			// 	color: theme.palette.text.default,
+            //     width: '100%',
+			// }}
+			sx={{ 
+				display: 'flex', 
+				flexDirection: { xs: 'column', md: 'row' },
+				alignItems: 'center', 
+				justifyContent: 'space-around', 
+				width: { xs: '90%' ,md : 1200}, // Responsive widths
+				margin: '0' ,
+				gap: 2,
 				backgroundColor: theme.palette.background.primary,
-				color: theme.palette.text.default,
-                width: '100%',
-			}}
+				color : theme.palette.text.default,
+				padding:2,
+			  }}
 		>
 			<Box padding={1}>
 				<Typography variant="body2" align="center">

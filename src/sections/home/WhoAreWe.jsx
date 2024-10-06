@@ -5,7 +5,22 @@ import SectionTitle from '../../components/SectionTitle';
 function WhoAreWe() {
   const theme = useTheme();
   return (
-    <Box sx={{ width: '100%' , mx: 'auto',maxWidth: 1200,px: 2 }}>
+    <Box 
+    display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        gap={5}
+        p={2}
+        sx={{
+          maxWidth: "100%",
+          "@media (min-width: 600px)": {
+            justifyContent: "space-between",
+          },
+          "@media (min-width: 960px)": {
+            justifyContent: "center",
+          },
+        }}
+    >
       <SectionTitle text="Who Are We?" />
       
       <Typography color= {theme.palette.accent.main}>

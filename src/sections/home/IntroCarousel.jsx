@@ -9,7 +9,7 @@ function IntroCarousel() {
     const { items } = GlobalStaticState.introCarousel;
 
     return (
-        <Box sx={{ width: '100%', overflow: 'hidden' }}>
+        <Box sx={{ width: '100%', overflow: 'hidden' ,marginBottom : 10, height : '50vh'}}>
             <Carousel
                 showArrows={true}
                 infiniteLoop={true}
@@ -26,7 +26,13 @@ function IntroCarousel() {
                         component="img"
                         src={item.image}
                         alt={item.alt}
-                        sx={{ width: '100%', height: '50vh', objectFit: 'contain' }}
+                        // sx={{ width: '100%', objectFit: 'cover' ,maxHeight: '50vh'}}
+                        sx={{
+                            width: '100%', // Make width 100% to fit the parent
+                            height: 'auto', // Allow height to adjust automatically
+                            maxHeight: '50vh', // Set a max height
+                            objectFit: 'contain', // Maintain aspect ratio while showing the full image
+                        }}
                     />
                 ))}
             </Carousel>
