@@ -25,7 +25,7 @@ export default function Call() {
           padding: '0', 
           margin: '0' }}>
         <CardContent>
-      <SectionTitle text=" Call Us"/>
+      <SectionTitle text=" Call Us" />
     <Box
     sx={{ 
       display: 'flex', 
@@ -35,7 +35,7 @@ export default function Call() {
         {
         phoneNumber.map((phone) => (
             <IconButton
-            key={phone.id}
+            key={phone+"C"}
             variant="contained" color="primary" 
             onClick={()=>handleCallClick(phone)}
             sx={{

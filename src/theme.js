@@ -24,7 +24,13 @@ const theme = createTheme({
       default: '#FFFFFF', // white
       main: '#A0A0A0', // grey
       primary: '#333333',
+      secondary : '#000000', // black
     },
+    fontStyle : [
+      {
+        fontFamily : 'Roboto, lato'
+      }
+    ]
   },
 });
 

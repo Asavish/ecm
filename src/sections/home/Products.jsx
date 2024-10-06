@@ -32,6 +32,9 @@ const Products = () => {
               title={product.name}
               description={product.description}
               image={product.image}
+              application = {product.application}
+              specs = {product.specs}
+              specicicationImage = {product.specificationImage}
             />
           </Box>
         ))}

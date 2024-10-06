@@ -20,7 +20,7 @@ function Contact() {
               height: { xs: 'auto', md: 400 }, // Auto height for small screens
               margin: '0' ,
               gap: 2,
-              backgroundColor: theme.palette.background.main,
+              backgroundColor: theme.palette.background.secondary,
               color : theme.palette.text.default,
               padding:2,
               marginTop : 10
@@ -35,22 +35,33 @@ function Contact() {
                 justifyContent="space-between" 
                 width="100%"
             >
-              <Box width={isSmallScreen ? "100%" : "40%"} marginBottom={isSmallScreen ? 2 : 0}>
+              <Box width={isSmallScreen ? "100%" : "40%"} marginBottom={isSmallScreen ? 2 : 0}
+              display="flex" 
+              flexDirection={isSmallScreen ? "column" : "row"} 
+              justifyContent={isSmallScreen ? "center" : "space-between" }
+              alignItems='center'
+              >
                 <img src={`${process.env.PUBLIC_URL}/js_logo.png`} alt="contact" width={"60%"} />
               </Box>
-              <Box width={isSmallScreen ? "100%" : "25%"} marginBottom={isSmallScreen ? 2 : 0}>
-                <Typography variant="h6">Address</Typography>
-                <Typography>123 Main Street</Typography>
-                <Typography>City, State, ZIP</Typography>
-                <Typography>Country</Typography>
+              <Box width={isSmallScreen ? "100%" : "70%"} marginBottom={isSmallScreen ? 2 : 0}>
+                
+                <Typography>
+                M/S - JAIN SHOTS INDUSTRIES<br/>
+                Floor No.: KHASRA NO.232<br/>
+                Building No.: UGF-03 PLOT NO.B-17<br/>
+                Street: RAIL VIHAR LONI<br/>
+                Landmark: Sri Shiv Shakti Sai Mandir<br/>
+                City: Ghaziabad<br/>
+                District: Ghaziabad<br/>
+                State: Uttar Pradesh<br/>
+                PIN Code: 201102
+                </Typography>
               </Box>
-              <Box width={isSmallScreen ? "100%" : "25%"}>
+              <Box width={isSmallScreen ? "100%" : "65%"}>
                 <Typography variant="h6">Contact Details</Typography>
-                <Typography>Phone: (123) 456-7890</Typography>
-                <Typography>Email: contact@example.com</Typography>
-                <Typography>WhatsApp: +1234567890</Typography>
-                <Typography>Follow us on:</Typography>
-                <Typography>Facebook | Twitter | Instagram</Typography>
+                <Typography>Phone: 7737878060</Typography>
+                <Typography>Email: jainshotsindustries@gmail.com</Typography>
+                <Typography>WhatsApp: 7737878060</Typography>
               </Box>
             </Box>
         </Box>
