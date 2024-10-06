@@ -42,7 +42,7 @@ export default function ProductDetails() {
             
         </Box>
         <h1>Description</h1>
-            <Typography variant="body1" color="text.primary" >
+            <Typography variant="body1" color={theme.palette.accent.main} >
                     {description}
             </Typography>
         </Box>
