@@ -18,10 +18,19 @@ function ProductCard({ title, description, image }) {
         <Card sx={{ maxWidth: 345 }}>
             <CardContent>
                 <img src={image} alt={title} style={{ width: '100%', height: 'auto' }} />
-                <Typography variant="h5" component="div">
+                <Typography variant="h6" component="div">
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" 
+                sx={{
+                    flexGrow: 1,
+                    display: '-webkit-box',
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
+                    WebkitLineClamp: 2, // Limit to 3 lines
+                    textOverflow: 'ellipsis',
+                  }}
+                >
                     {description}
                 </Typography>
                 <Button size="small" variant="contained" sx={{ mt: 2 }} onClick={handleClick}>

@@ -11,20 +11,20 @@ function Solutions() {
 			height="auto"
 			padding={2}
 			width="80%"
+			margin = '0 auto'
 		>
 			<SectionTitle text="Solutions" />
 			<Paper
-				width="100%"
-				textAlign="center"
-				wrap="wrap"
-				style={{
-					padding: "20px",
-					margin: "20px",
-					display: "flex",
-					flexDirection: "row",
-					alignItems: "center",
-					justifyContent: "center",
-				}}
+				sx={{
+					width: '100%',
+					textAlign: 'center',
+					padding: { xs: '10px', sm: '20px' }, // Responsive padding
+					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					display: 'flex',
+					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
+					alignItems: 'center',
+					justifyContent: 'center',
+				  }}
 			>
 				<Box
 					flexDirection="column"
@@ -61,21 +61,26 @@ function Solutions() {
 					<img
 						src="https://www.orishots.com/wp-content/uploads/2019/10/shot-blasting.jpg"
 						alt="Shot Blasting"
+						style={{
+							width: '100%', // Make the image responsive
+							height: 'auto', // Maintain aspect ratio
+							maxWidth: '600px', // Optional: limit the maximum width
+							marginTop: '20px', // Optional: add some spacing above the image
+						  }}
 					/>
 				</Box>
 			</Paper>
 			<Paper
-				width="100%"
-				textAlign="center"
-				wrap="wrap"
-				style={{
-					padding: "20px",
-					margin: "20px",
-					display: "flex",
-					flexDirection: "row",
-					alignItems: "center",
-					justifyContent: "center",
-				}}
+				sx={{
+					width: '100%',
+					textAlign: 'center',
+					padding: { xs: '10px', sm: '20px' }, // Responsive padding
+					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					display: 'flex',
+					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
+					alignItems: 'center',
+					justifyContent: 'center',
+				  }}
 			>
 				<Box
 					flexDirection="column"
@@ -108,6 +113,12 @@ function Solutions() {
 					<img
 						src="https://www.orishots.com/wp-content/uploads/2019/10/shotpeening.jpg"
 						alt="Shot Peening"
+						style={{
+							width: '100%', // Make the image responsive
+							height: 'auto', // Maintain aspect ratio
+							maxWidth: '600px', // Optional: limit the maximum width
+							marginTop: '20px', // Optional: add some spacing above the image
+						  }}
 					/>
 				</Box>
 			</Paper>

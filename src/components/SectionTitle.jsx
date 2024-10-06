@@ -17,9 +17,20 @@ function SectionTitle({ text, variant = 'h5', align = 'center', style = {} }) {
         color: theme.palette.text.primary,
         ...style 
     }}>
-      <Typography variant={variant}>
+      <Typography variant={variant} fontWeight= {'bold'}>
         {text}
       </Typography>
+      <Box
+        sx={{
+          borderBottom: '5px solid',
+          width: '50px', // Adjust the width as needed
+          marginTop: 1, // Space between text and line
+          marginBottom : 2,
+          borderColor: 'primary.main', // Use a color from your theme
+          justifyContent : 'center',
+          
+        }}
+      />
     </Box>
   );
 }

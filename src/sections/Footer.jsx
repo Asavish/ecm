@@ -15,7 +15,7 @@ function Footer() {
 				py: 3,
 				px: 2,
 				mt: "auto",
-				backgroundColor: theme.palette.accent.main,
+				backgroundColor: theme.palette.background.primary,
 				color: theme.palette.text.default,
                 width: '100%',
 			}}

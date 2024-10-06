@@ -13,12 +13,15 @@ const theme = createTheme({
     },
     background: {
       default: '#FFFFFF', // white
+      main: '#A0A0A0', // grey
+      primary : '#000000' // black
     },
     hover: {
       main: '#B71C1C',
     },
     text: {
       default: '#FFFFFF', // white
+      main: '#A0A0A0', // grey
       primary: '#333333',
     },
   },

@@ -10,8 +10,14 @@ import ContactUs from './views/ContactUs';
 import { Box } from '@mui/material';
 import Solutions from './views/Solutions';
 import Contact from './sections/Contact';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Box
       sx={{ 

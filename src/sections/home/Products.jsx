@@ -14,7 +14,7 @@ const Products = () => {
         display="flex"
         flexWrap="wrap"
         justifyContent="center"
-        gap={10}
+        gap={5}
         p={2}
         sx={{
           maxWidth: "100%",

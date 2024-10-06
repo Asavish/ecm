@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, Typography, useMediaQuery } from '@mui/material';
+import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import SectionTitle from '../components/SectionTitle'; 
 
 function Contact() {
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down('sm'));
-
+    const theme = useTheme();
     return (
         <Box 
             display="flex" 
@@ -12,6 +12,9 @@ function Contact() {
             alignItems="center" 
             justifyContent="center" 
             padding={2}
+            mt = {10}
+            bgcolor={theme.palette.background.main}
+            color={theme.palette.text.default}
             width='100%'
         >
             <Box marginBottom={2}> 

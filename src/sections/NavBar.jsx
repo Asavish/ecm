@@ -33,7 +33,7 @@ function NavBar() {
     ];
 
     return (
-    <AppBar position="static" sx={{ backgroundColor: theme.palette.secondary.main, width: '100%' }}>
+    <AppBar position="static" sx={{ backgroundColor: theme.palette.secondary.main, width: '100%', mb : '20px'}}>
         <Toolbar>
         <img 
             src={`${process.env.PUBLIC_URL}/js_logo.png`} 
