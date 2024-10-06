@@ -17,7 +17,8 @@ export default function Email () {
         <Card sx={{  mb : 20,marginRight: 2,
             justifyContent: 'center', 
             padding: '0', 
-            margin: '0', }}>
+            margin: '0', 
+            }}>
         <CardContent>
         <SectionTitle text=" Email Us"/>
       
@@ -26,7 +27,9 @@ export default function Email () {
         
                     
             {email.map(item => (
-                <IconButton key={item.id}  variant="contained" color="primary" 
+                <IconButton 
+                key={item} 
+                 variant="contained" color="primary" 
                 onClick={() => handleEmailClick(item)}
                 sx={{
                 backgroundColor: 'transparent', // Remove default background color

@@ -14,7 +14,7 @@ function WhoAreWe() {
         sx={{
           maxWidth: "100%",
           "@media (min-width: 600px)": {
-            justifyContent: "space-between",
+            justifyContent: "center",
           },
           "@media (min-width: 960px)": {
             justifyContent: "center",

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Typography, Paper } from "@mui/material";
 import SectionTitle from "../components/SectionTitle";
 
 function Solutions() {
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	  }, []);
+
 	return (
 		<Box
 			flexDirection="column"

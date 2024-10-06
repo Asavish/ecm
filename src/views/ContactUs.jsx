@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 import Email from "../components/Email";
 import WhatsApp from "../components/Whatsapp";
@@ -6,6 +6,9 @@ import Call from "../components/Call";
 
 export default function ContactUs() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     return(
       <Box 
@@ -21,9 +24,10 @@ export default function ContactUs() {
       }}
       >
       
-        <Email/>
+        
         <WhatsApp/>
         <Call/>
+        <Email/>
         
         
       </Box>

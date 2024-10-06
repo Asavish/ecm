@@ -3,13 +3,16 @@ import { Card, CardContent, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 
-function ProductCard({ title, description, image }) {
+function ProductCard({ title, description, image , application,specs,specificationImage}) {
     const navigate = useNavigate();
     const handleClick = () => {
         const state = {
             imageUrl: image, // Replace with your image URL
             description: description,
-            title : title
+            title : title,
+            application : application,
+            specs : specs,
+            specificationImage: specificationImage
           };
         navigate("/products/product-details",{state});
     }

@@ -17,7 +17,8 @@ export default function WhatsApp () {
         <Card sx={{ marginRight: 2,
             justifyContent: 'center', 
             padding: '0', 
-            margin: '0' }}>
+            margin: '0' 
+            }}>
         <CardContent>
         
       <SectionTitle text=" Whatsapp"/>
@@ -31,7 +32,7 @@ export default function WhatsApp () {
         {
         phoneNumber.map((phone) => (
             <IconButton
-            key={phone.id}
+            key={phone+"W"}
             variant="contained" color="primary" 
             onClick={()=>handleWhatsappClick(phone)}
             sx={{
