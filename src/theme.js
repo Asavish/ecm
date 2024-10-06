@@ -14,7 +14,8 @@ const theme = createTheme({
     background: {
       default: '#FFFFFF', // white
       main: '#A0A0A0', // grey
-      primary : '#000000' // black
+      primary : '#000000', // black
+      secondary : '#BA181B' //red
     },
     hover: {
       main: '#B71C1C',

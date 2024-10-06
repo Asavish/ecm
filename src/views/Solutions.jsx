@@ -17,7 +17,7 @@ function Solutions() {
 			<Paper
 				sx={{
 					width: '100%',
-					textAlign: 'center',
+					textAlign: 'left',
 					padding: { xs: '10px', sm: '20px' }, // Responsive padding
 					margin: { xs: '10px', sm: '20px' }, // Responsive margin
 					display: 'flex',
@@ -31,7 +31,7 @@ function Solutions() {
 					alignItems="center"
 					justifyContent="center"
 					height="auto"
-					width="100%"
+					width="85%"
 				>
 					<Typography variant="h4" fontWeight="bold">
 						What is Shot Blasting?
@@ -73,7 +73,7 @@ function Solutions() {
 			<Paper
 				sx={{
 					width: '100%',
-					textAlign: 'center',
+					textAlign: 'left',
 					padding: { xs: '10px', sm: '20px' }, // Responsive padding
 					margin: { xs: '10px', sm: '20px' }, // Responsive margin
 					display: 'flex',
@@ -87,7 +87,7 @@ function Solutions() {
 					alignItems="center"
 					justifyContent="center"
 					height="auto"
-					width="100%"
+					width="85%"
 				>
 					<Typography variant="h4" fontWeight="bold">
 						What is Shot peening?
@@ -123,11 +123,24 @@ function Solutions() {
 				</Box>
 			</Paper>
 			<Paper
-				width="100%"
-				textAlign="center"
-				wrap="wrap"
-				style={{ padding: "20px", margin: "20px" }}
+				sx={{
+					width: '100%',
+					textAlign: 'left',
+					padding: { xs: '10px', sm: '20px' }, // Responsive padding
+					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					display: 'flex',
+					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
+					alignItems: 'center',
+					justifyContent: 'center',
+				  }}
 			>
+				<Box
+					flexDirection="column"
+					alignItems="center"
+					justifyContent="center"
+					height="auto"
+					width="100%"
+				>
 				<Typography variant="h4" fontWeight="bold">
 					How to Choose your Abrasives?
 				</Typography>
@@ -162,15 +175,29 @@ function Solutions() {
 					shot blasting /peening who can provide you total solutions to any
 					issues or queries related to it.
 				</Typography>
+				</Box>
 			</Paper>
 			<Paper
-				width="100%"
-				textAlign="center"
-				wrap="wrap"
-				style={{ padding: "20px", margin: "20px" }}
+				sx={{
+					width: '100%',
+					textAlign: 'left',
+					padding: { xs: '10px', sm: '20px' }, // Responsive padding
+					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					display: 'flex',
+					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
+					alignItems: 'center',
+					justifyContent: 'center',
+				  }}
 			>
-				<Typography variant="body1" style={{ marginTop: "10px" }}>
-					We are Orient Industries understand that customization in products is
+				<Box
+					flexDirection="column"
+					alignItems="center"
+					justifyContent="center"
+					height="auto"
+					width="100%"
+				>
+				<Typography variant="body1" style={{ marginTop: "10px" ,width:"85%"}}>
+					We are Jain Shots Industries understand that customization in products is
 					extremely important given the dynamic business requirements. We
 					believe in providing customized solutions to all our customers rather
 					than just delivering products.
@@ -213,6 +240,7 @@ function Solutions() {
 						<li>Optimization Techniques to improve Cost efficiencies</li>
 					</ul>
 				</Typography>
+				</Box>
 			</Paper>
 		</Box>
 	);

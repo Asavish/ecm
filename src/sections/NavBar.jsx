@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/material';
 
 function NavBar() {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -33,13 +34,16 @@ function NavBar() {
     ];
 
     return (
-    <AppBar position="static" sx={{ backgroundColor: theme.palette.secondary.main, width: '100%', mb : '20px'}}>
+    <AppBar position="static" sx={{ backgroundColor: theme.palette.background.secondary, width: '100%', mb : '20px'}}>
         <Toolbar>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
         <img 
             src={`${process.env.PUBLIC_URL}/js_logo.png`} 
             alt="Company Logo" 
             style={{ height: '50px', marginRight: 'auto' }} 
         />
+        </Link>
+        <Box sx={{ flexGrow: 1 }} />
         {isMobile ? (
             <>
             <IconButton

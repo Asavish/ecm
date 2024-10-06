@@ -7,15 +7,24 @@ function Contact() {
     const theme = useTheme();
     return (
         <Box 
-            display="flex" 
-            flexDirection="column" 
-            alignItems="center" 
-            justifyContent="center" 
-            padding={2}
-            mt = {10}
-            bgcolor={theme.palette.background.main}
-            color={theme.palette.text.default}
-            width='100%'
+            // display="flex" 
+            // flexDirection="column" 
+            // alignItems="center" 
+            // justifyContent="center" 
+            sx={{ 
+              display: 'flex', 
+              flexDirection: { xs: 'column', md: 'row' },
+              alignItems: 'center', 
+              justifyContent: 'space-around', 
+              width: { xs: '90%' ,md : 1200}, // Responsive widths
+              height: { xs: 'auto', md: 400 }, // Auto height for small screens
+              margin: '0' ,
+              gap: 2,
+              backgroundColor: theme.palette.background.main,
+              color : theme.palette.text.default,
+              padding:2,
+              marginTop : 10
+            }}
         >
             <Box marginBottom={2}> 
               <SectionTitle text="Contact Us" />

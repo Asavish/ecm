@@ -11,7 +11,7 @@ export default function ContactUs() {
       <Box 
       sx={{ 
         display: 'flex', 
-        flexDirection: 'row', flexDirection: { xs: 'column', md: 'row' },
+        flexDirection: { xs: 'column', md: 'row' },
         alignItems: 'center', 
         justifyContent: 'space-around', 
         width: { xs: '90%' ,md : 1200}, // Responsive widths
