@@ -37,17 +37,20 @@ function Footer() {
 					{copyright}
 				</Typography>
 			</Box>
-			<Box padding={1}>
-				<Typography variant="body2" align="center">
-					<Link color="inherit" href="https://yourwebsite.com/">
-						<img
-							src={`${process.env.PUBLIC_URL}/js_logo_full.png`}
-							alt="Company Logo"
-							style={{ height: "20px" }}
-						/>
-					</Link>{" "}
-				</Typography>
+			  <Box alignItems={'center'}>
+			  <Box padding={1} display='flex' justifyContent='center' alignItems= 'center'>
+				<img 
+					src={`${process.env.PUBLIC_URL}/mainPageImage/cons.png`} 
+					alt="Company Logo" 
+					style={{ height: '50px'}} 
+					/>
 			</Box>
+			<Box padding={1}>
+			<Typography variant="body2" align="center">
+				Developed by CONS
+			</Typography>
+			</Box>
+			  </Box>
 		</Box>
 	);
 }
