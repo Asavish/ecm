@@ -60,7 +60,7 @@ function Contact() {
               <Box width={isSmallScreen ? "100%" : "65%"}>
                 <Typography variant="h6">Contact Details</Typography>
                 <Typography>Phone: 7737878060</Typography>
-                <Typography>Email: jainshotsindustries@gmail.com</Typography>
+                <Typography>Email: jainshots@gmail.com</Typography>
                 <Typography>WhatsApp: 7737878060</Typography>
               </Box>
             </Box>
