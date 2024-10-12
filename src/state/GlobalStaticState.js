@@ -126,7 +126,7 @@ export const GlobalStaticState = {
   },
   contact :{
     emails : [
-      "jainshotsindustries@gmail.com"
+      "jainshots@gmail.com"
     ],
     phone : [
       "7737878060"
