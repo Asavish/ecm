@@ -108,7 +108,7 @@ export const GlobalStaticState = {
         image: `${process.env.PUBLIC_URL}/mainPageImage/aluminiumCutWireShots.jpg`,
         application :'Aluminum Cut Wire Shots are specifically designed for cleaning aluminum and other non-ferrous castings that require a satin-type finish while effectively removing parting lines and other imperfections. These shots excel in applications such as shot blasting aluminum die castings, magnesium die castings, and aluminum forgings. Their unique properties ensure a smooth, aesthetically pleasing surface without damaging the substrate. By providing an efficient and gentle cleaning process, Aluminum Cut Wire Shots help achieve superior surface quality, making them the ideal choice for industries that demand precision and excellence in finish.',
         specs : 'Aluminum Cut Wire Shots are produced from high-quality aluminum wire, typically exhibiting a hardness range of 30-50 HV (Vickers Hardness). They are available in cylindrical shapes with diameters ranging from 0.25 mm to 2.5 mm and have a density of approximately 2.70 g/cm³. These shots are ideal for applications such as shot peening, surface cleaning, and providing a satin finish on components. Aluminum Cut Wire Shots effectively remove contaminants while minimizing damage to the substrate and are suitable for both ferrous and non-ferrous materials. Packaged in bulk bags or drums, they comply with industry standards, ensuring consistent performance and longevity in various industrial processes.',
-        specificationImage : `${process.env.PUBLIC_URL}/mainPageImage/aluminiumCutWireSpecs.jpg`
+        specificationImage : `${process.env.PUBLIC_URL}/mainPageImage/aluminiumCutWireSpecs.png`
       },
       {
         name: "Steel Shots",
