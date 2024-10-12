@@ -1,41 +1,41 @@
-import { Card, CardMedia, Typography, useTheme } from "@mui/material";
+import { Card, CardMedia, Paper, Typography, useTheme } from "@mui/material";
 
-export default function SectionContent ({title,description,imageUrl = ''}) {
+export default function SectionContent ({title,description,imageUrl = '',textColor,bodyColor}) {
 
     const theme = useTheme();
 
     return (<>
-        <Typography variant="h3" color={theme.palette.text.secondary} 
+        <Typography variant="h4" color={textColor} 
             sx={
                 {
                 padding:2,
-                marginBottom : 10
+                marginBottom : '10px'
                 }
             }
             >
             {title}
             </Typography>
-            
-
                 {description ? (  // Check if description is non-empty
-                <Typography variant="body1" color={theme.palette.accent.main} 
+                <Typography variant="body1" color={bodyColor} 
                 sx={
                     {
                         padding:2,
                     }
                 }
-                >
+                >{ console.log(description)}
                     {description}
                 </Typography>
             ) : (
-                <Card sx={{ maxWidth: '80%', width: '100%' , boxShadow :'none'}}>
+                <Card sx={{ maxWidth: '95%', width: '100%' , boxShadow :'none',padding:'0px 0px 2% 2%',
+                    marginBottom : '10px'}}>
                 <CardMedia
                     component="img"
                     alt="Descriptive Alt Text"
-                    sx={{ height: '80vh', objectFit: 'contain' }}
+                    sx={{width:'90%', objectFit: 'cover' }}
                     image={imageUrl}
                 />
             </Card>
             )}
+
     </>);
 }

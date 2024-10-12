@@ -1,9 +1,10 @@
 import React from 'react';
-import { Card, CardContent, Typography, Button } from '@mui/material';
+import { Card, CardContent, Typography, Button, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 
 function ProductCard({ title, description, image , application,specs,specificationImage}) {
+    const theme = useTheme();
     const navigate = useNavigate();
     const handleClick = () => {
         const state = {
@@ -24,7 +25,7 @@ function ProductCard({ title, description, image , application,specs,specificati
                 <Typography variant="h6" component="div">
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" 
+                <Typography variant="body2" color={theme.palette.text.main}
                 sx={{
                     flexGrow: 1,
                     display: '-webkit-box',
