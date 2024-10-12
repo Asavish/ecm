@@ -41,7 +41,7 @@ function Contact() {
               justifyContent={isSmallScreen ? "center" : "space-between" }
               alignItems='center'
               >
-                <img src={`${process.env.PUBLIC_URL}/js_logo.png`} alt="contact" width={"60%"} />
+                <img src={`${process.env.PUBLIC_URL}/js_logo.png`} alt="contact" width={"80%"} />
               </Box>
               <Box width={isSmallScreen ? "100%" : "70%"} marginBottom={isSmallScreen ? 2 : 0}>
                 
