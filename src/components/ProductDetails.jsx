@@ -2,6 +2,7 @@ import { Box, Breadcrumbs, Card, CardMedia, createTheme, Paper, Typography, useT
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import SectionContent from './SectionContent';
+import SteelCutWireShots from './SteelCutWireSpecs';
 
 export default function ProductDetails() {
 
@@ -71,10 +72,11 @@ export default function ProductDetails() {
                 bodyColor = {theme.palette.accent.main}/>
             </Paper>
             <Paper sx = {{marginBottom: 5}}>
-               
-                <SectionContent title = 'Specification' imageUrl={specificationImage}
+               {title == 'Steel Cut Wire Shot' ?<SteelCutWireShots/>:
+               <SectionContent title = 'Specification' imageUrl={specificationImage}
                 textColor = {theme.palette.text.secondary} 
-                bodyColor = {theme.palette.accent.main}/>
+                bodyColor = {theme.palette.accent.main}/>}
+                
             </Paper>
             
             </Box>

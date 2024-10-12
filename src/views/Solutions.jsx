@@ -23,8 +23,8 @@ function Solutions() {
 				sx={{
 					width: '100%',
 					textAlign: 'left',
-					padding: { xs: '10px', sm: '20px' }, // Responsive padding
-					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					padding: { xs: '10px 0px 10px 0px', sm: '20px 20px 20px 20px' }, // Responsive padding
+					margin: { xs: '10px 0px 10px 0px', sm: '20px 0px 20px 0px' }, // Responsive margin
 					display: 'flex',
 					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
 					alignItems: 'center',
@@ -79,8 +79,8 @@ function Solutions() {
 				sx={{
 					width: '100%',
 					textAlign: 'left',
-					padding: { xs: '10px', sm: '20px' }, // Responsive padding
-					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					padding: { xs: '10px 0px 10px 0px', sm: '20px 20px 20px 20px' }, // Responsive padding
+					margin: { xs: '10px 0px 10px 0px', sm: '20px 0px 20px 0px' }, // Responsive margin
 					display: 'flex',
 					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
 					alignItems: 'center',
@@ -131,8 +131,8 @@ function Solutions() {
 				sx={{
 					width: '100%',
 					textAlign: 'left',
-					padding: { xs: '10px', sm: '20px' }, // Responsive padding
-					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					padding: { xs: '10px 0px 10px 0px', sm: '20px 20px 20px 20px' }, // Responsive padding
+					margin: { xs: '10px 0px 10px 0px', sm: '20px 0px 20px 0px' }, // Responsive margin
 					display: 'flex',
 					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
 					alignItems: 'center',
@@ -144,7 +144,7 @@ function Solutions() {
 					alignItems="center"
 					justifyContent="center"
 					height="auto"
-					width="100%"
+					width="85%"
 				>
 				<Typography variant="h4" fontWeight="bold">
 					How to Choose your Abrasives?
@@ -186,8 +186,8 @@ function Solutions() {
 				sx={{
 					width: '100%',
 					textAlign: 'left',
-					padding: { xs: '10px', sm: '20px' }, // Responsive padding
-					margin: { xs: '10px', sm: '20px' }, // Responsive margin
+					padding: { xs: '10px 0px 10px 0px', sm: '20px 20px 20px 20px' }, // Responsive padding
+					margin: { xs: '10px 0px 10px 0px', sm: '20px 0px 20px 0px' }, // Responsive margin
 					display: 'flex',
 					flexDirection: { xs: 'column', md: 'row' }, // Stack on small screens, row on medium and up
 					alignItems: 'center',
@@ -199,7 +199,7 @@ function Solutions() {
 					alignItems="center"
 					justifyContent="center"
 					height="auto"
-					width="100%"
+					width="85%"
 				>
 				<Typography variant="body1" style={{ marginTop: "10px" ,width:"85%"}}>
 					We are Jain Shots Industries understand that customization in products is

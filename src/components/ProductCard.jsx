@@ -19,7 +19,7 @@ function ProductCard({ title, description, image , application,specs,specificati
     }
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, maxHeight : '100%'}}>
             <CardContent>
                 <img src={image} alt={title} style={{ width: '100%', height: 'auto' }} />
                 <Typography variant="h6" component="div">
