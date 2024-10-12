@@ -32,17 +32,26 @@ function Footer() {
 				padding:2,
 			  }}
 		>
+			<Box alignItems={'center'}>
+			<Box padding={1} display='flex' justifyContent='center' alignItems= 'center'>
+				<img 
+					src={`${process.env.PUBLIC_URL}/js_logo_full.png`} 
+					alt="Company Logo" 
+					style={{ height: '100px'}} 
+					/>
+			</Box>
 			<Box padding={1}>
 				<Typography variant="body2" align="center">
 					{copyright}
 				</Typography>
+			</Box>
 			</Box>
 			  <Box alignItems={'center'}>
 			  <Box padding={1} display='flex' justifyContent='center' alignItems= 'center'>
 				<img 
 					src={`${process.env.PUBLIC_URL}/mainPageImage/cons.png`} 
 					alt="Company Logo" 
-					style={{ height: '50px'}} 
+					style={{ height: '30px'}} 
 					/>
 			</Box>
 			<Box padding={1}>
