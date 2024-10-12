@@ -34,7 +34,7 @@ const Products = () => {
               image={product.image}
               application = {product.application}
               specs = {product.specs}
-              specicicationImage = {product.specificationImage}
+              specificationImage = {product.specificationImage}
             />
           </Box>
         ))}
